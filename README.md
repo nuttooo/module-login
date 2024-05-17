@@ -16,11 +16,28 @@ When a user requests a password reset, the system generates an OTP and associate
 
 1. Clone the repository: `git clone (https://github.com/nuttooo/module-login.git)`
 2. Install dependencies: `npm install`
-3. Start the server: `npm start`
+3. Create a `.env.local` file in the root directory of your project and add the following environment variables:
+
+```shellscript
+MONGODB_URI=<your-mongodb-uri>
+JWT_SECRET=<your-jwt-secret>
+EMAIL_FROM=<your-email>
+EMAIL_USER=<your-email-username>
+EMAIL_PASS=<your-email-password>
+EMAIL_HOST=<your-email-host>
+EMAIL_PORT=<your-email-port>
+EMAIL_SECURE=<true-or-false>
+LOGO_URL=<your-logo-url>
+NEXT_PUBLIC_BASE_URL=<your-base-url>
+```
+
+4. Start the server: `npm run dev`
+
+This step instructs the user to create a `.env.local` file and add the necessary environment variables.
 
 ## Usage
 
-1. After you have installed the project, you can start using it by running the command `npm start`.
+1. After you have installed the project, you can start using it by running the command `npm run dev`.
 2. The project will start running at `http://localhost:3000`.
 3. You can test the various features of the project as specified in the Features section.
 
